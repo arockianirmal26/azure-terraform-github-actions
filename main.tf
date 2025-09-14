@@ -47,3 +47,13 @@ module "synapse_workspace" {
   storage_account_name = module.adls_storage.storage_account_name
   file_system          = "raw-bronze"
 }
+
+module "spark_pool" {
+  source              = "./modules/synapse_spark_pool"
+  name                = "sparkpool1"
+  resource_group_name = var.resource_group_name
+  workspace_name      = module.synapse_workspace.synapse_workspace_name
+
+  node_size_family = "MemoryOptimized"
+  node_size        = "Small"
+}
