@@ -4,6 +4,7 @@ resource "azurerm_synapse_spark_pool" "this" {
 
   node_size_family = var.node_size_family # "MemoryOptimized"
   node_size        = var.node_size        # "Small"
+  node_count       = 3
 
   # node_count = var.node_count # used only when auto_scale=false
 
