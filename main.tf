@@ -36,3 +36,14 @@ module "adls_storage" {
   resource_group_name  = var.resource_group_name
   containers           = ["raw-bronze", "refined-silver", "business-gold"]
 }
+
+module "synapse_workspace" {
+  source              = "./modules/synapse_workspace"
+  name                = "synapse-ws-demo"
+  location            = var.location
+  resource_group_name = var.resource_group_name
+
+  storage_account_id   = module.adls_storage.storage_account_id
+  storage_account_name = module.adls_storage.storage_account_name
+  file_system          = "raw-bronze" # default filesystem (linked service requires one)
+}
