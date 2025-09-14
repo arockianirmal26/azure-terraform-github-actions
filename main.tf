@@ -39,11 +39,11 @@ module "adls_storage" {
 
 module "synapse_workspace" {
   source              = "./modules/synapse_workspace"
-  name                = "synapse-ws-demo"
+  name                = "synapsews1298tf" # must be unique!
   location            = var.location
   resource_group_name = var.resource_group_name
 
   storage_account_id   = module.adls_storage.storage_account_id
   storage_account_name = module.adls_storage.storage_account_name
-  file_system          = "raw-bronze" # default filesystem (linked service requires one)
+  file_system          = "raw-bronze"
 }
