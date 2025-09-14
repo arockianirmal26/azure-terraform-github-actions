@@ -5,8 +5,8 @@ resource "azurerm_storage_account" "this" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
   # Enable Hierarchical Namespace for ADLS Gen2
-  is_hns_enabled           = true
-  min_tls_version          = "TLS1_2"
+  is_hns_enabled = true
+  min_tls_version = "TLS1_2"
   tags = {
     environment = "dev"
     workload    = "data-platform"
