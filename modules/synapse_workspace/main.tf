@@ -1,7 +1,7 @@
 resource "azurerm_synapse_workspace" "this" {
-  name                                 = var.name
-  resource_group_name                  = var.resource_group_name
-  location                             = var.location
+  name                = var.name
+  resource_group_name = var.resource_group_name
+  location            = var.location
 
   # Correct format for default data lake
   storage_data_lake_gen2_filesystem_id = "https://${var.storage_account_name}.dfs.core.windows.net/${var.file_system}"

@@ -39,7 +39,7 @@ module "adls_storage" {
 
 module "synapse_workspace" {
   source              = "./modules/synapse_workspace"
-  name                = "synapsews1298tf"   # must be unique!
+  name                = "synapsews1298tf" # must be unique!
   location            = var.location
   resource_group_name = var.resource_group_name
 
