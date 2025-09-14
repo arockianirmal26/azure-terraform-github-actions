@@ -5,12 +5,7 @@ resource "azurerm_synapse_spark_pool" "this" {
   node_size_family = var.node_size_family # "MemoryOptimized"
   node_size        = var.node_size        # "Small"
 
-  node_count = var.node_count # used only when auto_scale=false
-
-  auto_scale {
-    max_node_count = 50
-    min_node_count = 3
-  }
+  # node_count = var.node_count # used only when auto_scale=false
 
   auto_pause {
     delay_in_minutes = 15
@@ -19,7 +14,7 @@ resource "azurerm_synapse_spark_pool" "this" {
 
   cache_size = 100 # Default cache size in GB per node, can be parameterized
 
-  spark_version = "3.3" # Current supported version (can be updated)
+  spark_version = "3.4" # Current supported version (can be updated)
 
   tags = {
     environment = "dev"
