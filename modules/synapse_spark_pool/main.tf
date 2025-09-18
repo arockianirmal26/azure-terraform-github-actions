@@ -1,3 +1,4 @@
+/*
 resource "azurerm_synapse_spark_pool" "this" {
   name                 = var.name
   synapse_workspace_id = "/subscriptions/${data.azurerm_client_config.current.subscription_id}/resourceGroups/${var.resource_group_name}/providers/Microsoft.Synapse/workspaces/${var.workspace_name}"
@@ -24,3 +25,4 @@ resource "azurerm_synapse_spark_pool" "this" {
 }
 
 data "azurerm_client_config" "current" {}
+*/

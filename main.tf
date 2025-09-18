@@ -27,7 +27,7 @@ provider "azurerm" {
 #  location = var.location
 # }
 
-
+/*
 # Call the storage account module
 module "adls_storage" {
   source               = "./modules/storage_account"
@@ -57,3 +57,4 @@ module "spark_pool" {
   node_size_family = "MemoryOptimized"
   node_size        = "Small"
 }
+*/

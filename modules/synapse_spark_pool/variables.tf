@@ -1,3 +1,4 @@
+/*
 variable "name" {
   description = "Name of the Synapse Spark pool."
   type        = string
@@ -34,3 +35,4 @@ variable "auto_scale" {
   type        = bool
   default     = false
 }
+*/

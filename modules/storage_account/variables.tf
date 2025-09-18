@@ -1,3 +1,5 @@
+/*
+
 variable "storage_account_name" {
   type        = string
   description = "The name of the storage account (must be globally unique, lowercase, 3–24 chars)."
@@ -17,3 +19,5 @@ variable "containers" {
   type        = list(string)
   description = "List of container names to create in the storage account."
 }
+
+*/

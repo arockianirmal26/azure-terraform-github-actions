@@ -1,3 +1,4 @@
+/*
 variable "name" {
   description = "Name of the Synapse workspace."
   type        = string
@@ -27,3 +28,4 @@ variable "file_system" {
   description = "The default file system (container) for the Synapse workspace."
   type        = string
 }
+*/

@@ -1,3 +1,4 @@
+/*
 resource "azurerm_storage_account" "this" {
   name                     = var.storage_account_name
   resource_group_name      = var.resource_group_name
@@ -18,3 +19,4 @@ resource "azurerm_storage_container" "this" {
   storage_account_name  = azurerm_storage_account.this.name
   container_access_type = "private"
 }
+*/
