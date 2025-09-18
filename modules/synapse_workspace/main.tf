@@ -1,3 +1,4 @@
+/*
 resource "azurerm_synapse_workspace" "this" {
   name                = var.name
   resource_group_name = var.resource_group_name
@@ -29,3 +30,4 @@ resource "azurerm_role_assignment" "synapse_storage_contrib" {
   role_definition_name = "Storage Blob Data Contributor"
   principal_id         = azurerm_synapse_workspace.this.identity[0].principal_id
 }
+ */
